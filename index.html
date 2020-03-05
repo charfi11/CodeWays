@@ -6,26 +6,34 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://kit.fontawesome.com/0f093fe195.js" crossorigin="anonymous"></script>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
     </style>
     <title>CodeWays</title>
   </head>
   <body>
+    <div class="backtotop"><i class="fas fa-arrow-circle-up text-dark up"></i></div>
     <nav class="d-flex justify-content-center navbar">
     <div style="width: 40%;" class="mt-3">
      <ul class="d-flex justify-content-around">
-       <li>Compétences</li>
-       <li>Tarifs</li>
+       <li class="compet"><small>Compétences</small><hr></li>
+       <li class="serv"><small>Services</small><hr></li>
      </ul>
     </div>
     <div class="logo d-flex justify-content-center" style="width: 20%;">
-      <div class="circle">test</div>
+      <div class="circle d-flex flex-column align-items-center">
+        <a href="index.html">
+        <p>Code</p><p>Ways</p></a>
+      </div>
     </div>
     <div style="width: 40%;" class="mt-3">
       <ul class="d-flex justify-content-around">
-        <li>Example</li>
-        <li>Contact</li>
+        <li class="port"><small>Portfolio</small><hr></li>
+        <li><a href="view/contact.html"><small>Contact</small></a><hr></li>
       </ul>
     </div>
     </nav>
@@ -37,21 +45,37 @@
       </div>
      </div>
 
+     <div class="d-flex intro">
+       <div class="left" style="width: 50%">
+       </div>
+       <div class="right" style="width: 50%">
+        <h3 class="d-flex justify-content-center titleskills mt-5 mb-3">
+          Présentation
+        </h3>
+        <p class="ml-4 mr-4 mt-5">
+         <strong>CodeWays</strong>, une jeune entreprise de développeur Web/Web mobile.
+          Si vous êtes à la recherche d'un développeur pour la création de votre 
+          site internet, que vous soyez une association, une entreprise ou un particulier
+          n'hesitez pas à me contacter.
+        </p>
+       </div>
+     </div>
+
      <div class="d-flex flex-column align-items-center skills">
-       <div class="d-flex justify-content-center mb-3">
-         <h2 class="mt-3 mb-2 titleskills">Compétences</h2>
+       <div class="d-flex justify-content-center mt-4 mb-4">
+         <h2 class="mt-3 mb-3 titleskills">Compétences</h2>
        </div>
        <div class="d-flex justify-content-around blockskills mt-4 mb-5">
 
       <div class="d-flex flex-column align-items-center">
-      <div class="progress pink">
+      <div class="progress yellow">
                     <span class="progress-left">
                         <span class="progress-bar"></span>
                     </span>
                     <span class="progress-right">
                         <span class="progress-bar"></span>
                     </span>
-                    <div class="progress-value">60%</div>
+                    <div class="progress-value">70%</div>
                 </div>
                 <div>
                   <h5 class="mt-3">Symfony/php</h5>
@@ -59,7 +83,7 @@
               </div>   
 
               <div class="d-flex flex-column align-items-center">
-                <div class="progress yellow">
+                <div class="progress pink">
                     <span class="progress-left">
                         <span class="progress-bar"></span>
                     </span>
@@ -91,43 +115,175 @@
           </div>
         </div>
 
-     <div class="d-flex flex-column align-items-center">
-     <div class="d-flex">
-      <h2 class="mt-3 mb-2 titletarif">Tarifs</h2>
+     <div class="d-flex flex-column align-items-center services">
+     <div class="d-flex mt-3">
+      <h2 class="mt-3 mb-3 titletarif">Services</h2>
      </div>
-     <div class="d-flex justify-content-around blocktarifs mt-5 mb-4">
+     <div class="d-flex justify-content-around blocktarifs mt-5 mb-5">
       <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Card title1</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button class="btn mt-3">En savoir plus</button>
+          <h5 class="card-title"><strong>Site vitrine</strong></h5>
+          <h6 class="card-subtitle mb-2 text-muted">(Site simple)</h6>
+          <p class="card-text">Vous souhaitez avoir une plus grande visibilité
+             pour votre entreprise, votre commerce ou autre,
+            cliquez pour connaître les différents forfaits.</p>
+          <button class="btn btn1 mt-3" data-toggle="modal" data-target="#exampleModalCenter"><span class="text1">En savoir plus</span>
+            <i class="fas fa-arrow-right text-white env1"></i></button>
         </div>
       </div>
 
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">Card title2</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button class="btn mt-3">En savoir plus</button>
+            <h5 class="card-title"><strong>Site sur mesure</strong></h5>
+            <h6 class="card-subtitle mb-2 text-muted">(Site complexe)</h6>
+            <p class="card-text">Vous avez des attentes précise pour un projet
+             de plus grande ampleur,
+             n'hesiez pas à regarder les propositions
+             en cliquant ci-dessous.
+            </p>
+            <button class="btn btn2 mt-3" data-toggle="modal" data-target="#exampleModalCenter2"><span class="text2">En savoir plus</span>
+              <i class="fas fa-arrow-right env2 text-white"></i></button>
           </div>
         </div>
 
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">Card title3</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button class="btn mt-3">En savoir plus</button>
+            <h5 class="card-title"><strong>Site e-commerce</strong></h5>
+            <h6 class="card-subtitle mb-2 text-muted">(Site marchand)</h6>
+            <p class="card-text">Vous souhaitez avoir un site marchand(e-commerce),
+              d'une simple vitrine à la possibilité de réservation et paiement en ligne,
+              cliquer pour en savoir plus.
+            </p>
+            <button class="btn btn3 mt-3" data-toggle="modal" data-target="#exampleModalCenter3"><span class="text3">En savoir plus</span>
+              <i class="fas fa-arrow-right env3 text-white"></i></button>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="d-flex flex-column align-items-center portfolio">
+      <div class="d-flex justify-content-center mt-3 mb-3">
+      <h2 class="portfoliotitle mt-3">Portfolio</h2>
+      </div>
+      <div class="container-fluid">
+      <div class="row mb-5">
+
+        <div class="cardprojet col-md-4" id="cardp1">
+          <a href="#">
+          <img class="imgcard" src="public/img/crew.jpg" alt="grpimg" style="width: 100%;" id="imgc">
+            <p class="textcardp1">All For One</p>
+            <p class="textcard2 mt-2"><small>Projet associatif</small></p>
+          </a>
+         </div>
+
+         <div class="cardprojet col-md-4" id="cardp2">
+          <a href="#">
+          <img class="imgcard" src="public/img/forest.jpg" alt="grpimg" style="width: 100%;" id="imgc">
+            <p class="textcardp2">BreakGuys</p>
+            <p class="textcard3 mt-2"><small>Projet de réseau social personnel</small></p>
+          </a>
+         </div>
+
+      </div>
+      </div>
+    </div>
     </main>
     <footer>
-    
+      <div class="d-flex flex-column">
+    <div class="d-flex justify-content-around justify-content-center mt-2">
+      <div>
+        <p>contact</p>
+      </div>
+      <div>
+        <p class="footlogo">CodeWays</p>
+      </div>
+    <div class="d-flex">
+      <span class="mr-4"><a href="#"><i class="fab fa-facebook-square"></i></a></span>
+      <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+      <span class="ml-4"><a href="#"><i class="fab fa-linkedin"></i></a></span>
+    </div>
+    </div>
+    <p class="mt-3 d-flex justify-content-center"><small><i class="far fa-copyright"></i> Copyright: CodeWays, Cm</small></p>
+  </div>
     </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalCenterTitle"><strong>Site vitrine</strong></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Tarifs pour un site vitrine simple</strong></p>
+        <p class="mt-2">De 1 à 8 pages: entre 500 et 1500 euro</p>
+        <p class="mt-3"><strong>Explications</strong></p>
+        <p>En fonction du nombre de pages, du design,
+          des fonctionnalitées le prix va varié.
+        </p>
+        <p><strong>Conseil</strong></p>
+        <p>Le choix d'un site vitrine est plus destiné aux petites entreprises, association ou commerçant.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btnmodal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalCenterTitle"><strong>Site complexe</strong></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Tarifs pour un site complexe</strong></p>
+        <p class="mt-3">Prix pour un site spécialisé: entre 2000 et 8000 euro</p>
+        <p><strong>Explications</strong></p>
+        <p>Un site 100% sur mesure ( Technique et Design ), avec développement spécifique
+          d’une fonctionnalité ou design d’un module particulier.
+      </p>
+      <p><strong>Conseil</strong></p>
+      <p>Prestation conseiller pour des entreprises ayant des besoins précis.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btnmodal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Site marchand</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Tarifs pour un site marchand</strong></p>
+        <p>Prix pour un site e-commerce entre 1000 et 4000 euro</p>
+        <p><strong>Explications</strong></p>
+        <p>Création d'un site E-commerce sur logiciel Open source avec template, Wordpress, Prestashop ...
+        </p>
+        <p><strong>Conseil</strong></p>
+        <p>Projet conseiller pour les entreprises ayant besoin d'une boutique en ligne ...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btnmodal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

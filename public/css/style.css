@@ -1,3 +1,11 @@
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * Version - 3.7.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2019 Daniel Eden
+ */
+ 
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +13,99 @@
 }
 
 main {
-    min-height: calc(100vh - 100px - 50px);
+    min-height: calc(100vh - 133px - 25px);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    background: black;
+    padding: 1%;
+    color: white;
+}
+
+span a i {
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: 400ms;
+}
+
+span:hover a i {
+    color: #DDA0DD;
+    transition: 400ms;
+}
+
+.footlogo {
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.backtotop {
+    position: fixed;
+    cursor: pointer;
+    z-index: 9999;
+    top: 94%;
+    right: 2%;
+}
+
+.backtotop i {
+    transition: 300ms;
+    font-size: 1.3em;
+}
+
+.backtotop:hover i {
+    transform: scale(1.1);
+    transition: 300ms;
+    color: lightgray!important;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 ul li {
+    cursor: pointer;
     list-style-type: none;
+    padding: 3%;
+    border-bottom: solid 2px transparent;
+    animation-name: fadeInDown;
+    animation-duration: 1.5s;
+}
+
+ul li:hover hr {
+    transition: 300ms;
+    border-color: #4B0082;
+}
+
+.circle a {
+    color: #4B0082;
+    transition: 300ms;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+.circle a:hover {
+    color: #DDA0DD;
+    transition: 300ms;
+    text-decoration: none;
 }
 
 nav.navbar {
@@ -18,17 +114,53 @@ nav.navbar {
     z-index: 9999999;
 }
 
-.navbar {
-    padding: 2%;
-    box-shadow: 1px 1px 3px 2px rgb(0, 0, 0, 0.3);
+.circle p {
+    font-size: 1.3em;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
 }
 
 .homepicture {
     background-image: url("../img/forest.jpg");
+    backdrop-filter: blur(5px) contrast(.8);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.intro {
+    width: 100%;
+    height: 24em;
+    border-bottom: solid 1px lightgray;
+}
+
+.left {
+    background-image: url("../img/dev.jpg");
+}
+
+.right p {
+    text-align: center;
+    line-height: 3em;
 }
 
 .title {
@@ -37,12 +169,30 @@ nav.navbar {
     text-align: center;
 }
 
+.title h1 {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+}
+
+.title h2 {
+    animation-name: fadeInDown;
+    animation-duration: 2.5s;
+}
+
 .titletarif {
     font-family: 'Pacifico', cursive;
 }
 
 .titleskills {
     font-family: 'Pacifico', cursive;
+}
+
+.portfoliotitle {
+    font-family: 'Pacifico', cursive;
+}
+
+.portfolio {
+    border-top: solid 1px lightgray;
 }
 
 .blocktarifs {
@@ -62,17 +212,171 @@ nav.navbar {
 }
 
 .btn {
-    border: solid 2px purple;
-    color: purple;
+    border: solid 2px #4B0082;
+    color: #4B0082;
     padding: 6%;
     border-radius: 3em;
     transition: 400ms;
     width: 70%;
 }
 
-.btn:hover {
-    background-color: purple;
+.modal {
+    z-index: 999999999999!important;
+}
+
+.cardprojet {
+    position: relative;
+    padding: 0!important;
+    text-align: center;
+    color: white;
     transition: 400ms;
+    overflow: hidden;
+}
+
+.imgcard {
+    filter: grayscale(1);
+    transition: 500ms;
+}
+
+#imgc {
+    filter: blur(1.1px);
+}
+
+.cardprojet:hover .imgcard {
+    transition: 500ms;
+    box-shadow: -1px 2px 3px 3px rgba(0, 0, 0, 0.9) inset;
+    transform: scale(1.3);
+}
+
+.textcardp1 {
+    cursor: pointer;
+    padding: 8%;
+    letter-spacing: 1px;
+    background: rgb(0,0,0, 0.8);
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 700ms;
+}
+
+.textcardp2 {
+    cursor: pointer;
+    padding: 8%;
+    letter-spacing: 1px;
+    background: rgb(0,0,0, 0.8);
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 700ms;
+}
+
+.textcard2 {
+    display: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    transition: 700ms;
+}
+
+.textcard3 {
+    display: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    transition: 700ms;
+}
+
+#cardp1:hover .textcardp1 {
+    font-weight: bold;
+    color: #4B0082;
+    background: none;
+    padding: 0;
+    top: 20%;
+    left: 20%;
+    transition: 700ms;
+}
+
+#cardp1:hover .imgcard {
+    filter: blur(0.7px);
+}
+
+#cardp2:hover .imgcard {
+    filter: blur(0.4px);
+}
+
+#cardp2:hover .textcardp2 {
+    font-weight: bold;
+    transition: 700ms;
+    color: #4B0082;
+    background: none;
+    padding: 0;
+    top: 20%;
+    left: 20%
+}
+
+.cardprojet a {
+    color: white;
+}
+
+.cardprojet:hover a {
+    color: white;
+}
+
+.btnmodal {
+    width: 25%;
+    padding: 2%;
+    color: white;
+    background-color: black;
+    border-radius: 0%;
+    border: none;
+    transition: 300ms;
+}
+
+.btnmodal:hover {
+    transition: 300ms;
+    color: white;
+}
+
+.fa-arrow-right.env1 {
+    display: none;
+}
+
+.fa-arrow-right.env2 {
+    display: none;
+}
+
+.fa-arrow-right.env3 {
+    display: none;
+}
+
+.btn:hover {
+    border-color: #DDA0DD;
+    background-color: #DDA0DD;
+    transition: 400ms;
+}
+
+.env1 {
+    font-size: 1.3em;
+}
+
+.env2 {
+    font-size: 1.3em;
+}
+
+.env3 {
+    font-size: 1.3em;
 }
 
 .progress{
