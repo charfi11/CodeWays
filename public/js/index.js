@@ -1,9 +1,11 @@
 $(window).scroll(function(){
     if ($(document).scrollTop() > 10) {
         $('.navbar').css({'background': 'black','color': 'white', 'transition': '500ms', 'box-shadow': '1px 1px 2px 1px rgba(0,0,0,0.2)'});
+        $('.nava').css({'color': 'white', 'transition': '500ms'});
     }
     else {
         $('.navbar').css({'background': 'transparent','color': 'black', 'transition': '500ms', 'box-shadow': 'none'});
+        $('.nava').css({'color': 'black', 'transition': '500ms'});
     }
 });
 

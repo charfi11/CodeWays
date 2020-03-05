@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+      min-height: calc(100vh - 133px - 25px);
+      padding-top: 180px;
+      padding-bottom: 150px;
+  }
+  
+  body {
+      font-family: 'Raleway', sans-serif;
+      background-image: url("../img/forest.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+ form {
+     width: 70%;
+     box-shadow: 1px 2px 4px 3px rgb(0,0,0,0.4);
+     background: whitesmoke;
+     border-radius: 1.5em;
+ }
+
+ textarea {
+     width: 90%;
+     height: 10em;
+ }
+
+ .btn {
+    width: 25%;
+    padding: 2%;
+    color: white;
+    background-color: black;
+    border-radius: 0%;
+    border: none;
+    transition: 300ms;
+ }
+
+ .btn:hover {
+    color: white;
+    background-color: #DDA0DD;
+    transition: 400ms;
+}
+
+  input {
+    height: calc(2em + 0.75rem + 2px);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
+    border-bottom: solid black 2px;
+    background-color: transparent;
+    margin-bottom: 6%;
+    color: black;
+    width: 95%;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #4B0082;
+    background-color: transparent;
+}
+
+input:after {
+    background-color: transparent;
+    color: black;
+}
+
+  
+  footer {
+      background: black;
+      padding: 1%;
+      color: white;
+  }
+  
+  li a {
+      color: black;
+  }
+  
+  li a:hover {
+      color: black;
+  }
+  
+  span a i {
+      color: white;
+      cursor: pointer;
+      font-size: 1.5em;
+      transition: 400ms;
+  }
+  
+  span:hover a i {
+      color: #DDA0DD;
+      transition: 400ms;
+  }
+  
+  .footlogo {
+      font-family: 'Pacifico', cursive;
+      
+  }
+
+  a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 3%;
+    border-bottom: solid 2px transparent;
+    animation-name: fadeInDown;
+    animation-duration: 1.5s;
+}
+
+ul li:hover hr {
+    transition: 300ms;
+    border-color: #4B0082;
+}
+
+.circle a {
+    color: #4B0082;
+    transition: 300ms;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+.circle a:hover {
+    color: #DDA0DD;
+    transition: 300ms;
+    text-decoration: none;
+}
+
+nav.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.circle p {
+    font-size: 1.3em;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
