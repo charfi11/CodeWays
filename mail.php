@@ -1,5 +1,4 @@
 <?php
- if(isset($_POST['message'])){
 
     $entete  = 'MIME-Version: 1.0' . "\r\n";
     $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -12,7 +11,7 @@
 
     $retour = mail('Charfim197@gmail.com', 'Envoi depuis page Contact', $message, $entete);
     if($retour) {
-        echo '<p>Votre email a bien été envoyé.</p>';
+echo 'Votre email à bien été envoyé !';
     }
-}
+
     ?>
