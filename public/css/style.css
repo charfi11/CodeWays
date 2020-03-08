@@ -55,7 +55,7 @@ input {
 input:focus {
     outline: none;
     box-shadow: none;
-    border-color: #1abc9c;
+    border-color: #f88379;
     background-color: transparent;
 }
 
@@ -72,62 +72,6 @@ li a:hover {
     color: black;
 }
 
-.code {
-    color: black;
-    animation-name: flipInX;
-    animation-duration: 2s;
-}
-
-.ways {
-    color: white;
-    animation-name: flipInX;
-    animation-duration: 2s;
-}
-
-.ulright {
-    color: white;
-}
-
-@keyframes flipInX {
-    from {
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-      opacity: 0;
-    }
-  
-    40% {
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-    }
-  
-    60% {
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-      opacity: 1;
-    }
-  
-    80% {
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    }
-  
-    to {
-      -webkit-transform: perspective(400px);
-      transform: perspective(400px);
-    }
-  }
-  
-  .flipInX {
-    -webkit-backface-visibility: visible !important;
-    backface-visibility: visible !important;
-    -webkit-animation-name: flipInX;
-    animation-name: flipInX;
-  }
-
 .circle a:hover {
     transition: 300ms;
     text-decoration: none;
@@ -137,11 +81,6 @@ span a i {
     color: white;
     cursor: pointer;
     font-size: 1.5em;
-    transition: 400ms;
-}
-
-span:hover a i {
-    color: #DDA0DD;
     transition: 400ms;
 }
 
@@ -173,9 +112,9 @@ span:hover a i {
 .backtotop:hover {
     transform: scale(1.03);
     transition: 200ms;
-    background: #1abc9c!important;
+    background: #f88379!important;
     color: black;
-    border: solid 2px #1abc9c;
+    border: solid 2px #f88379;
 }
 
 a:hover {
@@ -184,7 +123,6 @@ a:hover {
 
 ul {
     margin-bottom: 0!important;
-    padding: 2%;
 }
 
 ul li {
@@ -192,13 +130,12 @@ ul li {
     font-size: 1.2em;
     list-style-type: none;
     border-bottom: solid 2px transparent;
-    animation-name: fadeInDown;
-    animation-duration: 2s;
+    padding: 0.2%;
 }
 
 ul li:hover {
     transition: 300ms;
-    background-color: #1abc9c;
+    background-color: #f88379;
     color: white;
 }
 
@@ -294,13 +231,24 @@ ul li:hover {
 
 .logoa {
     display: flex;
+    color: white;
+}
+
+.logoa:hover {
+    color: #f88379;
+}
+
+.logoa a {
+    color: white;
 }
 
 nav.navbar {
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     z-index: 9999999;
     padding: 0!important;
+    color: white;
 }
 
 .circle p {
@@ -321,7 +269,7 @@ nav.navbar {
 }
 
 .right:hover .fa-arrow-right {
-    color: black;
+    color: white;
     transition: 500ms;
     transform: rotate(90deg);
 }
@@ -336,10 +284,8 @@ nav.navbar {
 }
 
 .right:hover .arrowr {
-    background: white;
     transition: 500ms;
-    width: 6%;
-    border-radius: 50%;
+    width: 7%;
 }
 
 .down {
@@ -464,7 +410,7 @@ nav.navbar {
   }
 
 .right {
-    background: black;
+    background: #05668D;
     font-size: 0.9em;
     color: whitesmoke;
     padding: 5%;
@@ -586,8 +532,8 @@ nav.navbar {
   }
 
 .btn {
-    border: solid 2px #1abc9c;
-    color: #1abc9c;
+    border: solid 2px #f88379;
+    color: #f88379;
     padding: 3%;
     border-radius: 2em;
     transition: 300ms;
@@ -598,10 +544,6 @@ nav.navbar {
     margin: 0;
     width: 1.4em;
     height: 1.4em;
-}
-
-.modal {
-    z-index: 999999999999!important;
 }
 
 .cardprojet {
@@ -669,7 +611,7 @@ nav.navbar {
 .btncardport:hover {
     color: white!important;
     transition: 200ms;
-    background-color: #1abc9c;
+    background-color: #f88379;
 }
 
 .btncardport2 {
@@ -689,41 +631,41 @@ nav.navbar {
 .btncardport2:hover {
     color: white!important;
     transition: 200ms;
-    background-color: #1abc9c;
+    background-color: #f88379;
 }
 
 #cardp1:hover .textcardp1 {
     top: 30%;
     left: 50%;
-    color: #1abc9c;
+    color: #f88379;
     background: none;
     padding: 0;
     transition: 350ms;
 }
 
 #cardp1:hover .btncardport {
-    color: #1abc9c;
+    color: #f88379;
     top: 65%;
     left: 50%;
     transition: 350ms;
-    border: solid 2px #1abc9c;
+    border: solid 2px #f88379;
 }
 
 #cardp2:hover .textcardp2 {
     top: 30%;
     left: 50%;
-    color: #1abc9c;
+    color: #f88379;
     background: none;
     padding: 0;
     transition: 350ms;
 }
 
 #cardp2:hover .btncardport2 {
-    color: #1abc9c;
+    color: #f88379;
     top: 65%;
     left: 50%;
     transition: 350ms;
-    border: solid 2px #1abc9c;
+    border: solid 2px #f88379;
 }
 
 #cardp1:hover .cardtxt1 {
@@ -734,23 +676,11 @@ nav.navbar {
     color: white;
 }
 
-.fa-arrow-right.env1 {
-    display: none;
-}
-
-.fa-arrow-right.env2 {
-    display: none;
-}
-
-.fa-arrow-right.env3 {
-    display: none;
-}
-
 .btn:hover {
-    border-color: #1abc9c;
-    background-color: #1abc9c;
+    border-color: #f88379;
+    background-color: #f88379;
     color: white;
-    transition: 300ms;
+    transition: 300ms; 
 }
 
 .contactbottom {
@@ -802,7 +732,7 @@ nav.navbar {
   }
 
   .txtvl {
-      font-size: 1.5em;
+      font-size: 1.2em;
       width: 40%;
       color: white;
       margin: auto;
@@ -940,7 +870,7 @@ nav.navbar {
       font-size: 1.5em;
       position: fixed;
       left: 40%;
-      z-index: 99;
+      z-index: 999999;
   }
 
   i.times {
@@ -950,7 +880,7 @@ nav.navbar {
 
 i.fa-times {
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -963,10 +893,6 @@ i.fa-times {
     display: none;
 }
 
-.navnav {
-    display: block;
-}
-
 @media screen and (max-width: 320px) {
     .backtotop {
         display: none;
@@ -975,11 +901,35 @@ i.fa-times {
         display: block!important;
         left: 40%;
     }
+    .txtvl {
+        font-size: 1em;
+    }
+    .blockvltitle {
+        font-size: 1em;
+    }
 }
 
   @media screen and (max-width: 450px) {
+      .arrowr {
+          display: none!important;
+      }
+      .carre {
+          display: none;
+      }
+      .txtvl {
+          width: 90%
+    }
+    .blockvltitle {
+        font-size: 1.4em;
+    }
+    .close {
+        font-size: 1.2em;
+    }
       .fa-bars {
           display: block!important;
+      }
+      .sk p {
+          font-size: 1em;
       }
       .fa-times {
         display: block!important;
@@ -993,19 +943,24 @@ i.fa-times {
       .right {
           text-align: center;
           padding: 0%;
-          font-size: 0.7em;
+          font-size: 0.8em;
       }
       .right p {
           margin: auto;
       }
       .imgleft {
-          width: 60%;
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
       }
       .fa-times {
         display: block;
     }
+    .blockdata {
+        margin-bottom: 15%;
+    }
     .backtotop {
-      display: none;
+      display: none!important;
     }
     .navnav {
         display: none;
@@ -1083,6 +1038,9 @@ i.fa-times {
           background: rgba(0, 0, 0, 1)!important;
           height: 100%;
       }
+      .jq {
+          display: none!important;
+      }
   }
 
   @media screen and (max-width: 375px) {
@@ -1103,11 +1061,6 @@ i.fa-times {
         left: 40%;
     }
   }
-
-  .php {
-      display: none;
-  }
-
   @media screen and (max-width: 320px) {
     .triangle {
         width: 70%;
@@ -1118,12 +1071,6 @@ i.fa-times {
     .vl4 p {
         margin-right: 0!important;
         margin-left: 10%;
-    }
-    .php {
-        display: block;
-    }
-    .sym {
-        display: none;
     }
     .btncardport {
         margin-top: 5%;
